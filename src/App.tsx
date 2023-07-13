@@ -1,5 +1,6 @@
 import Carousel from './components/Carousel'
 import Navbar from './components/Navbar'
+import Services from './components/Services'
 
 function App() {
 
@@ -7,10 +8,9 @@ function App() {
   return (
     <div className='max-w-6xl mx-auto'>
       <Navbar />
-      <div className='h-[365px]'>
-        <Carousel />
-      </div>
-      
+      <Carousel />
+      <Services />
+
     </div>
   )
 }
