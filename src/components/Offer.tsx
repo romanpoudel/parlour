@@ -8,7 +8,7 @@ const Offer = () => {
             </div>
             <div className="relative text-white backdrop-filter backdrop-blur  h-full flex flex-col items-center pt-14">
                 <div className="font-playfair text-4xl ">We Offer</div>
-                <div className="font-playfair text-lg tracking-widest mt-4">
+                <div className="font-playfair text-lg tracking-widest mt-4 flex flex-col gap-1">
                     <h2><span className='mx-4'><ArrowCircleRightIcon /></span> 15 days basic course</h2>
                     <h2><span className='mx-4'><ArrowCircleRightIcon /></span> 30 days intermediate course</h2>
                     <h2><span className='mx-4'><ArrowCircleRightIcon /></span> Nailart</h2>
