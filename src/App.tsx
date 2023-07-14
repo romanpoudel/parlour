@@ -1,4 +1,5 @@
 import Carousel from './components/Carousel'
+import Gallery from './components/Gallery'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
 
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Carousel />
       <Services />
+      <Gallery />
 
     </div>
   )
