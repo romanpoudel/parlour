@@ -54,7 +54,7 @@ const Services = () => {
                 }
             </div>
             <div>
-                <button
+                <button type="button"
                     className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
                     See More
                 </button>
