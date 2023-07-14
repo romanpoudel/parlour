@@ -2,6 +2,7 @@ import Carousel from './components/Carousel'
 import Footer from './components/Footer'
 import Gallery from './components/Gallery'
 import Navbar from './components/Navbar'
+import Offer from './components/Offer'
 import Products from './components/Products'
 import Services from './components/Services'
 
@@ -15,6 +16,7 @@ function App() {
       <Services />
       <Gallery />
       <Products />
+      <Offer />
       <Footer />
 
     </div>
