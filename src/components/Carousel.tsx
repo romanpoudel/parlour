@@ -26,7 +26,7 @@ export default function Carousel() {
         <Carousel1 
             NextIcon={<NavigateNextIcon fontSize='large' />}
             PrevIcon={<NavigateBeforeIcon fontSize='large' />}
-            navButtonsAlwaysVisible={true}
+            navButtonsAlwaysVisible={false}
             indicatorContainerProps={{
                 style: {
                     marginTop: '0px', // 5
@@ -34,7 +34,7 @@ export default function Carousel() {
             }}
             navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
                 style: {
-                    backgroundColor: 'transparent',
+                    backgroundColor: 'gray',
                 }
             }} 
             navButtonsWrapperProps={{   // Move the buttons to the bottom. Unsetting top here to override default style.

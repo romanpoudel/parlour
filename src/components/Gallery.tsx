@@ -37,7 +37,7 @@ const Gallery = () => {
             <div className="font-poppins text-2xl underline decoration-pink-500">
                 <text>Gallery</text>
             </div>
-            <div className="grid grid-cols-3 gap-8 my-7 w-full">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-7 w-full px-4 md:px-0">
                 {
                     items.map(
                         (item) =>

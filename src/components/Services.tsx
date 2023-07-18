@@ -48,7 +48,7 @@ const Services = () => {
                 </div>
                 <div className="text-xs">You Will Like To Look Like Goddes Every Day!</div>
             </div>
-            <div className="flex gap-x-16 my-5">
+            <div className="flex flex-row justify-between w-full  overflow-x-auto no-scrollbar my-5">
                 {
                     items.map((item) => (<ServiceCard key={item.id} {...item}/>))
                 }

@@ -64,7 +64,7 @@ const Products = () => {
             <div className="font-poppins text-2xl underline decoration-pink-500">
                 <text>Available Products</text>
             </div>
-            <div className="grid grid-cols-4 gap-x-16 my-7 w-full">
+            <div className="grid grid-cols-2  px-4 md:px-0 md:grid-cols-3 lg:grid-cols-4 gap-x-10 sm:gap-x-16 my-7 w-full">
                 {
                     items.map(
                         (item) =>
@@ -92,7 +92,7 @@ const SingleProduct = (props: any) => {
                 <img
                     src={props.image}
                     alt=""
-                    className=" w-full h-80 hover:shadow-lg hover:scale-105 object-cover "
+                    className="w-full h-52 md:h-80 hover:shadow-lg hover:scale-105 object-cover "
                 />
             </div>
             <div className="flex flex-col items-center py-4 ">

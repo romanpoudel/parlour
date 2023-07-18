@@ -7,12 +7,12 @@ const Contact = () => {
             <div className="font-poppins text-2xl  text-center">
                 <text>Contact Us</text>
             </div>
-            <div className="grid grid-cols-2 place-items-center mx-4 top-0">
+            <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center mx-4 top-0">
                 <div className="mt-4">
                     <form className="flex flex-col gap-4 ">
-                        <input type="text" placeholder="Name" className="bg-gray-100 rounded-sm py-2 w-96 pl-4 focus:outline-none" />
-                        <input type="email" placeholder="Email" className="bg-gray-100 rounded-sm py-2 w-96 pl-4 focus:outline-none" />
-                        <textarea placeholder="Message" className="bg-gray-100 rounded-sm py-2 w-96 pl-4 focus:outline-none" />
+                        <input type="text" placeholder="Name" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
+                        <input type="email" placeholder="Email" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
+                        <textarea placeholder="Message" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
                         <div className="mx-auto my-2">
                             <button type="submit"
                                 className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
