@@ -47,7 +47,7 @@ export default function Carousel() {
             {
                 items.map(
                     (item, i) => 
-                        <img key={i} src={item.image} alt={item.id} className='w-full h-52 object-cover'/>
+                        <img key={i} src={item.image} alt={item.id} className='w-full h-64 object-cover'/>
                     )
             }
         </Carousel1>
