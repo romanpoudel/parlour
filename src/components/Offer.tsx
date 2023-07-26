@@ -2,7 +2,7 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 const Offer = () => {
     return (
-        <div className="relative my-6 h-96 w-full">
+        <div id="trainings" className="relative my-6 h-96 w-full">
             <div className="absolute w-full ">
                 <img src="/images/background.jfif" alt="" className="h-96 w-full object-cover"/>
             </div>

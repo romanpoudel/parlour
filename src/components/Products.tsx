@@ -60,7 +60,7 @@ const Products = () => {
 
     ]
     return (
-        <div className="flex flex-col items-center mt-6">
+        <div id="products" className="flex flex-col items-center mt-6">
             <div className="font-poppins text-2xl underline decoration-pink-500">
                 <text>Available Products</text>
             </div>

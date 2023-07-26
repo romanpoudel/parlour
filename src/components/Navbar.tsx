@@ -9,13 +9,13 @@ const Navbar = () => {
         setIsOpen(!isOpen)
     }
     return (
-        <div className="flex items-center  justify-between my-2 relative">
+        <div className="flex items-center  justify-between py-2  sticky top-0 z-20 bg-white">
             <div className="flex items-center">
                 <div className="w-[78px] h-[43px]">
                     <img src="/parlourlogo.png" alt="Logo" />
                 </div>
                 <div className="font-playfair font-bold text-xl text-pink-500 hidden sm:block md:hidden lg:block">
-                    Shreeja Beauty Parlour
+                    <a href='/'> Shreeja Beauty Parlour</a>
                 </div>
             </div>
 

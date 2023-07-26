@@ -3,7 +3,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 const Contact = () => {
     return (
-        <div className="flex flex-col  ">
+        <div id="contact" className="flex flex-col  ">
             <div className="font-poppins text-2xl  text-center">
                 <text>Contact Us</text>
             </div>
@@ -22,13 +22,17 @@ const Contact = () => {
                     </form>
                     <div className="flex flex-col items-center h-[200px] ">
                         <div className="flex items-center my-4"><hr className="border-2 border-x-8 border-pink-500 w-12" /><span className="mx-3 font-semibold">OR</span><hr className="w-12 border-2 border-x-8 border-pink-500" /></div>
-                        <div className="text-pink-500 font-bold"><PhoneIcon /><span className='ml-2 font-bold'>9842843976</span></div>
+                        <div className="text-pink-500 font-bold"><a href="tel:+9779861948036"><PhoneIcon /><span className='ml-2 font-bold'>9842843976</span></a></div>
                         <div className="flex my-3">
                             <div>
-                                <img src="/images/facebook.svg" alt="tiltok" className=" h-10 w-10" />
+                                <a href="https://www.facebook.com/shreejabeautyparlour">
+                                    <img src="/images/facebook.svg" alt="facebook" className=" h-10 w-10" />
+                                </a>
                             </div>
                             <div>
-                                <img src="/images/tiktok.svg" alt="tiltok"  className="h-10 w-10"/>
+                                <a href="https://www.tiktok.com/@shreejabeautyparlour__00">
+                                    <img src="/images/tiktok.svg" alt="tiltok" className="h-10 w-10" />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +45,7 @@ const Contact = () => {
                         height="432"
                         // loading="lazy"
                         className="my-4"
-                        >
+                    >
                     </iframe>
                 </div>
             </div>
