@@ -147,7 +147,7 @@ const Gallery = () => {
     ]
     return (
         <div id="gallery" className="flex flex-col items-center mt-6">
-            <div className="max-w-6xl font-poppins text-2xl underline decoration-pink-500 fixed z-20 top-0 bg-white w-full flex items-center justify-center h-14 bg-opacity-95">
+            <div className="max-w-6xl font-poppins text-2xl underline decoration-pink-500 fixed z-20 top-0 bg-white w-full flex flex-col items-center justify-center h-14 bg-opacity-95">
                 <Link to="/"><p className="absolute text-base left-2 font-mono font-light text-gray-600"><span className="font-bold pr-1">&lt;</span>Back</p></Link>
                 <p>Gallery</p>
             </div>
