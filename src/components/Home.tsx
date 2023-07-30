@@ -3,7 +3,7 @@ import Carousel from "./Carousel"
 import Contact from "./Contact"
 import Gallery from "./gallery/Gallery"
 import Offer from "./Offer"
-import Products from "./Products"
+import Products from "./products/Products"
 import Services from "./services/Services"
 import Navbar from './navbar/Navbar'
 

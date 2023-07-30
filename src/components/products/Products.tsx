@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import SingleProduct from "./SingleProduct"
 
 const Products = () => {
     var items = [
@@ -74,31 +76,15 @@ const Products = () => {
                 }
             </div>
             <div>
-                <button type="button"
-                    className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
-                    See More
-                </button>
+                <Link to="products">
+                    <button type="button"
+                        className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
+                        See More
+                    </button>
+                </Link>
             </div>
         </div>
     )
 }
 
 export default Products
-
-const SingleProduct = (props: any) => {
-    return (
-        <div>
-            <div>
-                <img
-                    src={props.image}
-                    alt=""
-                    className="w-full h-52 md:h-80 hover:shadow-lg hover:scale-105 object-cover "
-                />
-            </div>
-            <div className="flex flex-col items-center py-4 ">
-                <div className="text-pink-500 font-poppins">{props.price}</div>
-                <div className="font-semibold">{props.title}</div>
-            </div>
-        </div>
-    )
-}
