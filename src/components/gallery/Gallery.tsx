@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const Gallery = () => {
@@ -35,7 +36,7 @@ const Gallery = () => {
     return (
         <div id="gallery" className="flex flex-col items-center mt-6">
             <div className="font-poppins text-2xl underline decoration-pink-500">
-                <text>Gallery</text>
+                <p>Gallery</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-7 w-full px-4 md:px-0">
                 {
@@ -50,10 +51,12 @@ const Gallery = () => {
                 }
             </div>
             <div>
-                <button type="button"
-                    className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
-                    See More
-                </button>
+                <Link to="gallery">
+                    <button type="button"
+                        className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
+                        See More
+                    </button>
+                </Link>
             </div>
         </div>
     )

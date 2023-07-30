@@ -1,26 +1,24 @@
-import Carousel from './components/Carousel'
-import Contact from './components/Contact'
+import Home from './components/Home'
 import Footer from './components/Footer'
-import Gallery from './components/Gallery'
-import Navbar from './components/Navbar'
-import Offer from './components/Offer'
-import Products from './components/Products'
-import Services from './components/Services'
+// import Navbar from './components/navbar/Navbar'
+import DetailServices from './components/services/DetailServices'
+import DetailGallery from './components/gallery/DetailGallery'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
 
 
   return (
     <div className='max-w-6xl mx-auto'>
-      <Navbar />
-      <Carousel />
-      <Services />
-      <Gallery />
-      <Products />
-      <Offer />
-      <Contact />
-      <Footer />
-
+      <Router>
+        {/* <Navbar /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<DetailServices />} />
+          <Route path="/gallery" element={<DetailGallery />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   )
 }

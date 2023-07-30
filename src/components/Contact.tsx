@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div id="contact" className="flex flex-col  ">
             <div className="font-poppins text-2xl  text-center">
-                <text>Contact Us</text>
+                <p>Contact Us</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center mx-4 top-0">
                 <div className="mt-4">
