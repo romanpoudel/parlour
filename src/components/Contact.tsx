@@ -1,7 +1,21 @@
 import PhoneIcon from '@mui/icons-material/Phone';
-
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 const Contact = () => {
+    const form = useRef<any>();
+    const sendEmail = (e:any) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_957pd38', 'template_bd076ie', form.current, 'EdwGe7zHSYQMJdTdK')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            form.current.reset()
+            alert("Message sent")
+    };
     return (
         <div id="contact" className="flex flex-col  ">
             <div className="font-poppins text-2xl  text-center">
@@ -9,17 +23,17 @@ const Contact = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center mx-4 top-0">
                 <div className="pt-6">
-                    <form className="flex flex-col gap-8 ">
+                    <form ref={form} className="flex flex-col gap-8 " onSubmit={sendEmail}>
                         <div className='relative '>
-                            <input id="name" type="text" placeholder="Name" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
+                            <input id="name" name="name" type="text" placeholder="Name" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
                             <label htmlFor="name" className='absolute left-0 -top-6 text-gray-600 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:left-4 transition-all peer-focus:left-0 peer-focus:-top-6 peer-focus:text-gray-600'>Name</label>
                         </div>
                         <div className='relative'>
-                            <input id="email" type="email" placeholder="Email" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
+                            <input id="email" name="email" type="email" placeholder="Email" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
                             <label htmlFor="email" className='absolute left-0 -top-6 text-gray-600 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:left-4 transition-all peer-focus:left-0 peer-focus:-top-6 peer-focus:text-gray-600'>Email</label>
                         </div>
                         <div className='relative '>
-                            <textarea id='message' placeholder="Message" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
+                            <textarea id='message' name="message" placeholder="Message" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
                             <label htmlFor="message" className='absolute left-0 -top-6 text-gray-600 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:left-4 transition-all peer-focus:left-0 peer-focus:-top-6 peer-focus:text-gray-600'>Message</label>
                         </div>
                         <div className="mx-auto my-2">
