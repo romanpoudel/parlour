@@ -8,11 +8,20 @@ const Contact = () => {
                 <p>Contact Us</p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center mx-4 top-0">
-                <div className="mt-4">
-                    <form className="flex flex-col gap-4 ">
-                        <input type="text" placeholder="Name" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
-                        <input type="email" placeholder="Email" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
-                        <textarea placeholder="Message" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
+                <div className="pt-6">
+                    <form className="flex flex-col gap-8 ">
+                        <div className='relative '>
+                            <input id="name" type="text" placeholder="Name" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
+                            <label htmlFor="name" className='absolute left-0 -top-6 text-gray-600 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:left-4 transition-all peer-focus:left-0 peer-focus:-top-6 peer-focus:text-gray-600'>Name</label>
+                        </div>
+                        <div className='relative'>
+                            <input id="email" type="email" placeholder="Email" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
+                            <label htmlFor="email" className='absolute left-0 -top-6 text-gray-600 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:left-4 transition-all peer-focus:left-0 peer-focus:-top-6 peer-focus:text-gray-600'>Email</label>
+                        </div>
+                        <div className='relative '>
+                            <textarea id='message' placeholder="Message" className="peer bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none placeholder-transparent" />
+                            <label htmlFor="message" className='absolute left-0 -top-6 text-gray-600 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:left-4 transition-all peer-focus:left-0 peer-focus:-top-6 peer-focus:text-gray-600'>Message</label>
+                        </div>
                         <div className="mx-auto my-2">
                             <button type="submit"
                                 className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-2">
@@ -42,9 +51,9 @@ const Contact = () => {
                         title="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.4796693896556!2d86.6977869749945!3d26.792851365232142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eec3e71ab5cb1d%3A0x9868036624a4893e!2sshreeja%20beauty%20parlour%20and%20training%20centre!5e0!3m2!1sen!2snp!4v1689356500881!5m2!1sen!2snp"
                         width="400"
-                        height="432"
+                        height="480"
                         // loading="lazy"
-                        className="my-4"
+                        // className="my-4"
                     >
                     </iframe>
                 </div>
