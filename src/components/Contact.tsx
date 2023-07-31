@@ -15,7 +15,7 @@ const Contact = () => {
                         <textarea placeholder="Message" className="bg-gray-100 rounded-sm py-2 w-80 sm:w-96 pl-4 focus:outline-none" />
                         <div className="mx-auto my-2">
                             <button type="submit"
-                                className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
+                                className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-2">
                                 Submit
                             </button>
                         </div>

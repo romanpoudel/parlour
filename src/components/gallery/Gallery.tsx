@@ -53,7 +53,7 @@ const Gallery = () => {
             <div>
                 <Link to="gallery">
                     <button type="button"
-                        className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-1">
+                        className="text-white bg-pink-500 font-bold font-poppins text-xl rounded-full px-8 py-2">
                         See More
                     </button>
                 </Link>

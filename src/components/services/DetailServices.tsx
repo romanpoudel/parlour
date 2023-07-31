@@ -183,8 +183,8 @@ const DetailServices = () => {
     return (
         <div>
             <div id="services" className="flex flex-col items-center mt-4">
-                <div className="max-w-6xl flex flex-row items-center fixed z-20 top-0 bg-white w-full  justify-center h-14 bg-opacity-95">
-                    <Link to="/"><p className="absolute text-base left-2 font-mono font-light text-gray-600"><span className="font-bold pr-1">&lt;</span>Back</p></Link>
+                <div className="max-w-6xl flex flex-col items-center fixed z-20 top-0 bg-white w-full  justify-center h-14 bg-opacity-95">
+                    <Link to="/"><p className="absolute text-base left-2 font-mono font-light text-gray-600 mt-3"><span className="font-bold pr-1">&lt;</span>Back</p></Link>
                     <div className="flex flex-col items-center">
                         <div className="font-poppins text-2xl underline decoration-pink-500">
                             <p>Our Services</p>

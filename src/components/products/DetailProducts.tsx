@@ -288,7 +288,7 @@ const Products = () => {
     return (
         <div id="products" className="flex flex-col items-center ">
             <div className="max-w-6xl font-poppins text-2xl underline decoration-pink-500 fixed z-20 top-0 bg-white w-full flex flex-col items-center justify-center h-14 bg-opacity-95">
-                <Link to="/"><p className="absolute text-base left-2 font-mono font-light text-gray-600"><span className="font-bold pr-1">&lt;</span>Back</p></Link>
+                <Link to="/"><p className="absolute text-base left-2 font-mono font-light text-gray-600 mt-1"><span className="font-bold pr-1">&lt;</span>Back</p></Link>
                 <p>Available Products</p>
             </div>
             <div className="grid grid-cols-2  px-4 md:px-0 md:grid-cols-3 lg:grid-cols-4 gap-x-10 sm:gap-x-16 my-7 w-full mt-16">
